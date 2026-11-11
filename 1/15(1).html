@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pirdienu spaidītājs</title>
+<title>Spēle</title>
 <style>
 body { font-family: Arial, sans-serif; max-width: 680px; margin: 24px auto; padding: 16px; line-height: 1.6; }
 button, input { font: inherit; padding: 10px; margin: 4px; }
@@ -14,20 +14,19 @@ img { max-width: 100%; height: auto; }
 </style>
 </head>
 <body>
-<h1>Pirdienu spaidītājs</h1>
-<p>Izrādi dominanci piržot</p>
+<h1>Spēle</h1>
+<p>Savāc visas monētas!</p>
 <section id="sakums">
-  <h2>Pird!</h2>
-  <button onclick="paraditSpeli()">Nopirdies</button>
+  <h2>Sākt spēli</h2>
+  <button onclick="paraditSpeli()">Sākt spēli</button>
 </section>
 <section id="laukums" hidden>
   <h2>Rezultāts</h2>
   <p>Punkti: 67</p>
-  <p>Alfa pezdētājs.</p>
-  <button onclick="paraditSakumu()">Caureja</button>
+  <p>Alfa.</p>
+  <button onclick="paraditSakumu()">Kings</button>
 </section>
 <script>
-// Gatavā palīdzība pogām. Šodien maini lapas tekstu un izvietojumu.
 function paraditSpeli() {
   document.getElementById("sakums").hidden = true;
   document.getElementById("laukums").hidden = false;
